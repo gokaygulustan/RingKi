@@ -50,7 +50,7 @@ jobs:
         run: |
           choco install nsis -y --no-progress
           if ($LASTEXITCODE -ne 0) { throw "NSIS install failed" }
-          & "${env:ProgramFiles(x86)}\NSIS\makensis.exe" installer/ringki.nsi
+          & "${env:ProgramFiles(x86)}\NSIS\makensis.exe" /NOCD installer/ringki.nsi
           if ($LASTEXITCODE -ne 0) { throw "NSIS installer build failed" }
           Get-FileHash dist/RingKi-Setup-Windows-x86.exe -Algorithm SHA256 | ForEach-Object { "$($_.Hash.ToLower())  RingKi-Setup-Windows-x86.exe" } | Set-Content dist/RingKi-Setup-Windows-x86.exe.sha256
       - uses: actions/upload-artifact@v4
