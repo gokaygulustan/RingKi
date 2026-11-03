@@ -1,0 +1,10 @@
+/build/
+/dist/
+*.exe
+*.zip
+*.sha256
+*.obj
+*.o
+.DS_Store
+*.bak
+*.log

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240">
+  <g transform="translate(14 14) scale(.4140625)">
+    <rect width="512" height="512" rx="112" fill="#020626"/>
+    <path d="M117 236c-21 28-28 63-21 96" fill="none" stroke="#3587A8" stroke-linecap="round" stroke-width="16"/>
+    <path d="M395 236c21 28 28 63 21 96" fill="none" stroke="#3587A8" stroke-linecap="round" stroke-width="16"/>
+    <path d="M231 183c3-28 13-45 25-45s22 17 25 45" fill="none" stroke="#F5F5F7" stroke-linecap="round" stroke-width="16"/>
+    <path d="M208 183c-45 19-64 61-70 116l-10 61c-3 19-11 33-26 49-10 11-3 26 12 26h284c15 0 22-15 12-26-15-16-23-30-26-49l-10-61c-6-55-25-97-70-116-12-5-84-5-96 0z" fill="#F5F5F7"/>
+    <path d="M239 435v18c0 10 8 18 17 18s17-8 17-18v-18" fill="none" stroke="#F26522" stroke-linecap="round" stroke-width="15"/>
+  </g>
+  <text x="250" y="126" font-family="Arial, Helvetica, sans-serif" font-size="94" font-weight="700" letter-spacing="-3" fill="#020626">RingKi</text>
+  <rect x="255" y="157" width="42" height="6" rx="3" fill="#F26522"/>
+  <text x="310" y="165" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" letter-spacing="3" fill="#86868B">OKUL ZİL SİSTEMİ</text>
+</svg>
