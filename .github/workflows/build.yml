@@ -18,7 +18,7 @@ jobs:
         with:
           msystem: MINGW32
           update: true
-          install: mingw-w64-i686-gcc make
+          install: mingw-w64-i686-gcc mingw-w64-i686-binutils make
       - name: Compile Win32 x86 EXE
         shell: msys2 {0}
         run: make clean all
