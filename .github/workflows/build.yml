@@ -21,12 +21,16 @@ jobs:
           install: mingw-w64-i686-gcc mingw-w64-i686-binutils make
       - name: Compile Win32 x86 EXE
         shell: msys2 {0}
-        run: make clean all
+        run: |
+          export PATH="/mingw32/bin:$PATH"
+          make clean all
       - name: Verify bundled audio
         run: python tests/verify_assets.py
       - name: Audit imported DLLs
-        shell: pwsh
-        run: ./scripts/audit-imports.ps1
+        shell: msys2 {0}
+        run: |
+          export PATH="/mingw32/bin:$PATH"
+          bash ./scripts/audit-imports.sh
       - name: Package portable app
         if: startsWith(github.ref, 'refs/tags/v')
         shell: pwsh
